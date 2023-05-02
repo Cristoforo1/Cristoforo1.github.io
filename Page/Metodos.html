@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <script src="../Js/char.js"></script>
+        <script src="../Js/Metodo.js" defer></script>
+
+        <title>
+           Tiendas 3B.com
+        </title>
+       
+        <style>
+            body{
+                font-family: sans-serif;
+                text-align: center;
+            }
+            input{
+                display: block;
+                margin: auto;
+                margin-bottom: 15px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="contenedorA">
+        <header>
+            <a href="../Index.html" class="logo">
+                <img src="../IMAGENES/logo.png" alt="Logo Compañia">
+            </a>
+       
+        <nav id="menu">
+                <!-- start menu -->
+            <ul data-animation="to-left">
+                 <li><a href="../Index.html">Inicio</a></li>
+                 <li><a href="../Page/Analisis.html">Analisis y Diseño de Sistemas</a>
+                <!-- start menu desplegable -->
+                 <ul>
+                    <li><a href="../Page/Presentacion.html">Diapositiva 1</a></li>
+                    <li><a href="../Page/Diapositiva 2.html">Diapositiva 2</a></li>
+                    <li><a href="../Page/Diapositiva 3.html">Diapositiva 3</a></li>
+                    <li><a href="../Page/Diapositiva 4.html">Diapositiva 4</a></li>
+                 </ul>
+                <!-- end menu desplegable -->
+                 </li>
+                 <li><a href="../Page/Arquitectura.html">Arquitectura de Computadoras</a></li>
+                 <li><a href="../Page/Metodos.html">Metodos Numericos</a></li>
+                 <li><a href="../Page/Moviles.html">Desarrollo de Aplicaciones Moviles</a></li>
+            </ul>
+                <!-- end menu -->
+        </nav>
+        
+        </header>
+
+        <hr size="10px">
+        <h1>Metodo: Multiplicadores de Lagrange</h1>
+
+        <p class="texto">
+            El modelo de Lagrange permite maximizar o minimizar una función de dos variables con una restricción, <br>
+            y puede ser aplicado a dos situaciones: <br>
+            la búsqueda del equilibrio del consumidor dada una restricción presupuestaria <br>
+            y la minimización de costos para un nivel determinado de producción de una empresa.
+        </p>
+
+        <p class="texto">
+            El método de los multiplicadores de Lagrange es una poderosa herramienta <br>
+            para resolver esta clase de problemas sin la necesidad de resolver explicitamente las condiciones y usarlas para eliminiar variables extra <br>
+        </p>
+ 
+      <div class="DiagramPunto" align="center">
+        <img src="../IMAGENES/Diagrama Punto Fijo.png" alt="PUNTO" class="ImgZomm">
+      </div>
+      
+
+        <hr size="10px">
+<br>
+        <h1>Calculadora Metodo Lagrange</h1>
+<br>
+      
+        <section class="BloqueMetodo">
+            <h2>Ingresa los datos a continuacion</h2>
+            
+            <form action="" method="dialog">
+
+                <div class="Bloque1">
+                    <section class="Seccion1">
+                        
+                        <input type="text" id="txtFuncion" placeholder="Ingresa la Funcion">
+                        <input type="text" id="txtX" placeholder="Ingresa valor de X">
+                        <select id="cbOrden">
+                            <option value="orden1">Orden 1</option>
+                            <option value="orden2">Orden 2</option>
+                        </select>
+                        
+                    </section>
+
+                    <section class="Seccion2">
+                        <input type="text" id="txtx0" placeholder="Ingresa valor X0">
+                        <input type="text" id="txtx1" placeholder="Ingresa valor X1">
+                        <input type="text" id="txtx2" placeholder="Ingresa valor X2">
+                        <br>
+                        <input type="submit" value="Calcular" id="btnCalcular">
+                    </section>
+                </div>
+             
+            </form>
+        </section>
+       
+       <p id="confirmacion"></p>
+
+        
+            <h3>Resultado:</h3>
+            <p id="ResultFx"></p>
+
+    <!--Inicia Tabla -->
+
+<table align="center">
+        <tr>
+            <th style="background-color: rgb(231, 51, 51)">
+                Pasos
+            </th>
+         
+            <th style="background-color:rgb(231, 51, 51)">
+                x
+            </th>
+
+            <th style="background-color:rgb(231, 51, 51)">
+                F(x)
+            </th>                       
+        </tr>
+         
+    <!-- FILA 1 -->
+    <tr id="Resultados">
+        <td>
+            <p id="PasosX0"></p>
+        </td>
+            
+        <td>
+            <p id="X0"></p>
+        </td>
+            
+        <td>
+            <p id="Fx0"></p>
+        </td>
+         
+    </tr>
+             
+    <!-- FILA 2 -->
+         
+    <tr>
+        <td>
+            <p id="PasosX1"></p>
+        </td>
+        
+        <td>
+            <p id="X1"></p>
+        </td>
+            
+        <td>
+            <p id="Fx1"></p>
+        </td>
+        
+    </tr>
+
+    <!-- FILA 3 -->
+         
+    <tr>
+        <td>
+            <p id="PasosX2"></p>
+        </td>
+    
+        <td>
+            <p id="X2"></p>
+        </td>
+        
+        <td>
+            <p id="Fx2"></p>
+        </td>
+    
+    </tr>
+
+</table>
+         
+
+<h1>Grafica</h1>
+
+<canvas id="grafica"></canvas>
+
+
+
+
+
+    </div>
+</body>
+</html>
